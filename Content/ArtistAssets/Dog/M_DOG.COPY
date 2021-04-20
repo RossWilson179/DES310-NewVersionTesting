@@ -1,0 +1,267 @@
+Begin Object Class=/Script/Engine.Material Name="M_DOGFinal1"
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_12"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_13"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFresnel Name="MaterialExpressionFresnel_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionIf Name="MaterialExpressionIf_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionPixelDepth Name="MaterialExpressionPixelDepth_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSceneTexture Name="MaterialExpressionSceneTexture_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_1"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_5"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_6"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_4"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_3"
+      Texture=Texture2D'"/Game/Cane/Dog/BasecolorFinale.BasecolorFinale"'
+      MaterialExpressionEditorX=-869
+      MaterialExpressionEditorY=-389
+      MaterialExpressionGuid=D38D606F4FE1AA9733D560AB1A5C1D36
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionAdd_3"
+      A=(Expression=MaterialExpressionPixelDepth'"M_DOGFinal1:MaterialExpressionPixelDepth_1"',Mask=1,MaskR=1)
+      B=(Expression=MaterialExpressionScalarParameter'"M_DOGFinal1:MaterialExpressionScalarParameter_3"')
+      MaterialExpressionEditorX=-802
+      MaterialExpressionEditorY=495
+      MaterialExpressionGuid=960563FC4D29CB29946453B4B96404F4
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_1"
+      Input=(Expression=MaterialExpressionSceneTexture'"M_DOGFinal1:MaterialExpressionSceneTexture_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+      R=True
+      MaterialExpressionEditorX=-754
+      MaterialExpressionEditorY=639
+      MaterialExpressionGuid=7BB6F6B74FB5C6A7EE4FA39A91E3BFE0
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      R=24.635962
+      MaterialExpressionEditorX=-986
+      MaterialExpressionEditorY=273
+      MaterialExpressionGuid=0C2D510543AFAB32D1EE3BA2FE7760B0
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_12"
+      MaterialExpressionEditorX=-706
+      MaterialExpressionEditorY=703
+      MaterialExpressionGuid=3F4C28F94F486CA0D0E87B98A0D72B2E
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_13"
+      R=1.000000
+      MaterialExpressionEditorX=-706
+      MaterialExpressionEditorY=783
+      MaterialExpressionGuid=245278DB4CA6E859D3DBF2BFAF65CA46
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_2"
+      R=2.000000
+      MaterialExpressionEditorX=-976
+      MaterialExpressionEditorY=352
+      MaterialExpressionGuid=2A9CB39F4E38A0468D3CDC80457D09FD
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionFresnel_0"
+      ExponentIn=(Expression=MaterialExpressionConstant'"M_DOGFinal1:MaterialExpressionConstant_2"')
+      MaterialExpressionEditorX=-800
+      MaterialExpressionEditorY=352
+      MaterialExpressionGuid=6253B8DA4E3A9E64BFD5CCAF4DA2B521
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionIf_1"
+      A=(Expression=MaterialExpressionAdd'"M_DOGFinal1:MaterialExpressionAdd_3"')
+      B=(Expression=MaterialExpressionComponentMask'"M_DOGFinal1:MaterialExpressionComponentMask_1"')
+      AGreaterThanB=(Expression=MaterialExpressionConstant'"M_DOGFinal1:MaterialExpressionConstant_12"')
+      AEqualsB=(Expression=MaterialExpressionConstant'"M_DOGFinal1:MaterialExpressionConstant_13"')
+      ALessThanB=(Expression=MaterialExpressionConstant'"M_DOGFinal1:MaterialExpressionConstant_13"')
+      MaterialExpressionEditorX=-496
+      MaterialExpressionEditorY=464
+      MaterialExpressionGuid=B18555AD4B1FEBB5E7B061BF8290E3EE
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0"
+      A=(Expression=MaterialExpressionVectorParameter'"M_DOGFinal1:MaterialExpressionVectorParameter_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionConstant'"M_DOGFinal1:MaterialExpressionConstant_0"')
+      MaterialExpressionEditorX=-656
+      MaterialExpressionEditorY=144
+      MaterialExpressionGuid=2F9627E246FA9C71381A2AB6E38D85B4
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_1"
+      A=(Expression=MaterialExpressionMultiply'"M_DOGFinal1:MaterialExpressionMultiply_2"')
+      B=(Expression=MaterialExpressionIf'"M_DOGFinal1:MaterialExpressionIf_1"')
+      MaterialExpressionEditorX=-254
+      MaterialExpressionEditorY=323
+      MaterialExpressionGuid=E3759A304589F5F852760BA3367EACFF
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2"
+      A=(Expression=MaterialExpressionMultiply'"M_DOGFinal1:MaterialExpressionMultiply_0"')
+      B=(Expression=MaterialExpressionFresnel'"M_DOGFinal1:MaterialExpressionFresnel_0"')
+      MaterialExpressionEditorX=-576
+      MaterialExpressionEditorY=288
+      MaterialExpressionGuid=5CEF9299426C7DED3CCBC69F4A5B4FD2
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionPixelDepth_1"
+      MaterialExpressionEditorX=-1010
+      MaterialExpressionEditorY=479
+      MaterialExpressionGuid=DD7F35CD410FA903E48832A678912738
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_3"
+      DefaultValue=-2.000000
+      ParameterName="DepthBias"
+      ExpressionGUID=6FD002E845F0FDBF552036BCB4E3B10A
+      MaterialExpressionEditorX=-1010
+      MaterialExpressionEditorY=559
+      MaterialExpressionGuid=1B1ECE5044B9657745C6338797F52520
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionSceneTexture_1"
+      SceneTextureId=PPI_CustomDepth
+      MaterialExpressionEditorX=-1090
+      MaterialExpressionEditorY=639
+      MaterialExpressionGuid=D33D5D604D29078E2ECC0C974A9A8E90
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0"
+      Texture=Texture2D'"/Game/Cane/aaa.aaa"'
+      MaterialExpressionEditorX=-224
+      MaterialExpressionEditorY=-384
+      MaterialExpressionGuid=84725F1B475E360BBDE1BA9E80AD9DAE
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1"
+      Texture=Texture2D'"/Game/Cane/dafare_lambert1_BaseColor_1001.dafare_lambert1_BaseColor_1001"'
+      MaterialExpressionEditorX=-1664
+      MaterialExpressionEditorY=-288
+      MaterialExpressionGuid=E576E24944D59046FA50C2936FB3795F
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_2"
+      Texture=Texture2D'"/Game/Cane/testee.testee"'
+      MaterialExpressionEditorX=-304
+      MaterialExpressionEditorY=-752
+      MaterialExpressionGuid=0DEC7560429EDB9F1D7993BCDB8EC627
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_1"
+      DefaultValue=(R=0.078516,G=0.548134,B=1.005000,A=1.000000)
+      ParameterName="Color"
+      ExpressionGUID=DA02D5964FFA9A81F2C3B18591FD69D2
+      MaterialExpressionEditorX=-998
+      MaterialExpressionEditorY=76
+      MaterialExpressionGuid=31489841403A18DF7BCE1FAAAF1E02BA
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_5"
+      Texture=Texture2D'"/Game/Cane/Dog/dafare_DogMat_Normal_1001.dafare_DogMat_Normal_1001"'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-1344
+      MaterialExpressionEditorY=16
+      MaterialExpressionGuid=D28A28394583257956798588B4CA1D1E
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_6"
+      Texture=Texture2D'"/Game/Cane/Dog/dafare_DogMat_OcclusionRoughnessMetallic_1001.dafare_DogMat_OcclusionRoughnessMetallic_1001"'
+      MaterialExpressionEditorX=-336
+      MaterialExpressionEditorY=832
+      MaterialExpressionGuid=1AA618204285B181DFB638B2E1C7F694
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_4"
+      Texture=Texture2D'"/Game/Cane/Dog/dafare_DogMat_BaseColor_1001.dafare_DogMat_BaseColor_1001"'
+      MaterialExpressionEditorX=-640
+      MaterialExpressionEditorY=-160
+      MaterialExpressionGuid=6795E66A4D208887F03DA0A694B47171
+      Material=Material'"M_DOGFinal1"'
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_4"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Metallic=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_6"',OutputIndex=3,Mask=1,MaskB=1)
+   Roughness=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_6"',OutputIndex=2,Mask=1,MaskG=1)
+   Normal=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_5"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EmissiveColor=(Expression=MaterialExpressionMultiply'"MaterialExpressionMultiply_1"')
+   Opacity=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_4"',OutputIndex=4,Mask=1,MaskA=1)
+   OpacityMask=(OutputIndex=4,Mask=1,MaskA=1)
+   BlendMode=BLEND_Additive
+   AmbientOcclusion=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_6"',OutputIndex=1,Mask=1,MaskR=1)
+   TranslucencyLightingMode=TLM_Surface
+   bUsedWithStaticLighting=True
+   AllowTranslucentCustomDepthWrites=True
+   EditorX=-32
+   EditorY=16
+   Expressions(0)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_1"'
+   Expressions(1)=MaterialExpressionMultiply'"MaterialExpressionMultiply_1"'
+   Expressions(2)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"'
+   Expressions(3)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_2"'
+   Expressions(4)=MaterialExpressionMultiply'"MaterialExpressionMultiply_0"'
+   Expressions(5)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_1"'
+   Expressions(6)=MaterialExpressionConstant'"MaterialExpressionConstant_0"'
+   Expressions(7)=MaterialExpressionMultiply'"MaterialExpressionMultiply_2"'
+   Expressions(8)=MaterialExpressionFresnel'"MaterialExpressionFresnel_0"'
+   Expressions(9)=MaterialExpressionConstant'"MaterialExpressionConstant_2"'
+   Expressions(10)=MaterialExpressionIf'"MaterialExpressionIf_1"'
+   Expressions(11)=MaterialExpressionAdd'"MaterialExpressionAdd_3"'
+   Expressions(12)=MaterialExpressionPixelDepth'"MaterialExpressionPixelDepth_1"'
+   Expressions(13)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_3"'
+   Expressions(14)=MaterialExpressionComponentMask'"MaterialExpressionComponentMask_1"'
+   Expressions(15)=MaterialExpressionSceneTexture'"MaterialExpressionSceneTexture_1"'
+   Expressions(16)=MaterialExpressionConstant'"MaterialExpressionConstant_12"'
+   Expressions(17)=MaterialExpressionConstant'"MaterialExpressionConstant_13"'
+   Expressions(18)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_3"'
+   Expressions(19)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_4"'
+   Expressions(20)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_5"'
+   Expressions(21)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_6"'
+   ParameterGroupData(0)=(GroupName="None")
+   ParameterGroupData(1)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=16A86C75432E495CD38823BB9A252451
+   CachedExpressionData=(Parameters=(RuntimeEntries[0]=(NameHashes=(9342082709731111959),ParameterInfos=((Name="DepthBias")),ExpressionGuids=(6FD002E845F0FDBF552036BCB4E3B10A),Overrides=(False)),RuntimeEntries[1]=(NameHashes=(12279385124011487613),ParameterInfos=((Name="Color")),ExpressionGuids=(DA02D5964FFA9A81F2C3B18591FD69D2),Overrides=(False)),ScalarValues=(-2.000000),VectorValues=((R=0.078516,G=0.548134,B=1.005000,A=1.000000)),ScalarMinMaxValues=((X=0.000000,Y=0.000000)),ScalarCurveValues=(None),ScalarCurveAtlasValues=(None),VectorChannelNameValues=(()),VectorUsedAsChannelMaskValues=(False)),ReferencedTextures=(Texture2D'"/Game/Cane/dafare_lambert1_BaseColor_1001.dafare_lambert1_BaseColor_1001"',Texture2D'"/Game/Cane/aaa.aaa"',Texture2D'"/Game/Cane/testee.testee"',Texture2D'"/Game/Cane/Dog/BasecolorFinale.BasecolorFinale"',Texture2D'"/Game/Cane/Dog/dafare_DogMat_BaseColor_1001.dafare_DogMat_BaseColor_1001"',Texture2D'"/Game/Cane/Dog/dafare_DogMat_Normal_1001.dafare_DogMat_Normal_1001"',Texture2D'"/Game/Cane/Dog/dafare_DogMat_OcclusionRoughnessMetallic_1001.dafare_DogMat_OcclusionRoughnessMetallic_1001"'),QualityLevelsUsed=(False,False,False,False))
+   ReferencedTextureGuids(0)=81D4F91C4D62A3022CD6E5B751E6E1E1
+   ReferencedTextureGuids(1)=57FA2F944D22641FCD2985B52959809C
+   ReferencedTextureGuids(2)=35142D1645B6F6F1D3BBEEAFF18D05FE
+   TextureStreamingDataVersion=1
+   TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="dafare_DogMat_BaseColor_1001",TextureReference=/Game/Cane/Dog/dafare_DogMat_BaseColor_1001.dafare_DogMat_BaseColor_1001)
+   TextureStreamingData(1)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="dafare_DogMat_Normal_1001",TextureReference=/Game/Cane/Dog/dafare_DogMat_Normal_1001.dafare_DogMat_Normal_1001)
+   TextureStreamingData(2)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="dafare_DogMat_OcclusionRoughnessMetallic_1001",TextureReference=/Game/Cane/Dog/dafare_DogMat_OcclusionRoughnessMetallic_1001.dafare_DogMat_OcclusionRoughnessMetallic_1001)
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   ParameterOverviewExpansion=(("-12Global", True))
+   LightingGuid=B880B21C42E812B1039D00BEA109C8E1
+End Object

@@ -1,0 +1,99 @@
+Begin Object Class=/Script/Engine.Material Name="DogLuminace"
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_5"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_1"
+      A=(Expression=MaterialExpressionTextureSample'"DogLuminace:MaterialExpressionTextureSample_5"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionVectorParameter'"DogLuminace:MaterialExpressionVectorParameter_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=-304
+      MaterialExpressionEditorY=192
+      MaterialExpressionGuid=7F4F4BC6495FC88D20AF57884C56044A
+      Material=Material'"DogLuminace"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2"
+      A=(Expression=MaterialExpressionMultiply'"DogLuminace:MaterialExpressionMultiply_1"')
+      MaterialExpressionEditorX=-160
+      MaterialExpressionEditorY=144
+      MaterialExpressionGuid=804E83164C004B261F389E8F71C152D8
+      Material=Material'"DogLuminace"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0"
+      DefaultValue=1.000000
+      ParameterName="Emissive"
+      ExpressionGUID=00B7A45F4FB40BEFAEA182A551870A3D
+      MaterialExpressionEditorX=-416
+      MaterialExpressionEditorY=448
+      MaterialExpressionGuid=DE77ACB44874FDB1764EEB897141823B
+      Material=Material'"DogLuminace"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_5"
+      Texture=Texture2D'"/Game/iouoyyttfgi_initialShadingGroup_BaseColor_1001.iouoyyttfgi_initialShadingGroup_BaseColor_1001"'
+      MaterialExpressionEditorX=-608
+      MaterialExpressionGuid=56DB05384E62B3AB20179DBD28C6B534
+      Material=Material'"DogLuminace"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0"
+      DefaultValue=(R=-0.032015,G=0.393851,B=0.635417,A=0.000000)
+      ParameterName="Emissive"
+      ExpressionGUID=3E8CE8F148EA6AAB7132B586E695E907
+      MaterialExpressionEditorX=-592
+      MaterialExpressionEditorY=256
+      MaterialExpressionGuid=2E8D022240CD499BB3701DA51625CA87
+      Material=Material'"DogLuminace"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_0"
+      Constant=(R=0.000000,G=0.442806,B=0.953125,A=1.000000)
+      MaterialExpressionEditorX=-240
+      MaterialExpressionEditorY=384
+      MaterialExpressionGuid=958108FA44B264D430838C8F1D1EB98A
+      Material=Material'"DogLuminace"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0"
+      Texture=Texture2D'"/Game/Cane/Dog/eye_blinn1_BaseColor_1001.eye_blinn1_BaseColor_1001"'
+      MaterialExpressionEditorX=-592
+      MaterialExpressionEditorY=-272
+      MaterialExpressionGuid=3963739F4CC33AA50080139946C36C1F
+      Material=Material'"DogLuminace"'
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Metallic=(Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Roughness=(Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Normal=(Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EmissiveColor=(Expression=MaterialExpressionMultiply'"MaterialExpressionMultiply_2"')
+   TwoSided=True
+   bUsedWithStaticLighting=True
+   Expressions(0)=MaterialExpressionMultiply'"MaterialExpressionMultiply_2"'
+   Expressions(1)=MaterialExpressionMultiply'"MaterialExpressionMultiply_1"'
+   Expressions(2)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_0"'
+   Expressions(3)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"'
+   Expressions(4)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_5"'
+   Expressions(5)=MaterialExpressionConstant3Vector'"MaterialExpressionConstant3Vector_0"'
+   Expressions(6)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"'
+   ParameterGroupData(0)=(GroupName="None")
+   ParameterGroupData(1)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=60BE3167482CE5384D171C95088B19A6
+   CachedExpressionData=(Parameters=(RuntimeEntries[0]=(NameHashes=(3775951208358729996),ParameterInfos=((Name="Emissive")),ExpressionGuids=(00B7A45F4FB40BEFAEA182A551870A3D),Overrides=(False)),RuntimeEntries[1]=(NameHashes=(3775951208358729996),ParameterInfos=((Name="Emissive")),ExpressionGuids=(3E8CE8F148EA6AAB7132B586E695E907),Overrides=(False)),ScalarValues=(1.000000),VectorValues=((R=-0.032015,G=0.393851,B=0.635417,A=0.000000)),ScalarMinMaxValues=((X=0.000000,Y=0.000000)),ScalarCurveValues=(None),ScalarCurveAtlasValues=(None),VectorChannelNameValues=(()),VectorUsedAsChannelMaskValues=(False)),ReferencedTextures=(Texture2D'"/Game/iouoyyttfgi_initialShadingGroup_BaseColor_1001.iouoyyttfgi_initialShadingGroup_BaseColor_1001"',Texture2D'"/Game/Cane/Dog/eye_blinn1_BaseColor_1001.eye_blinn1_BaseColor_1001"'),QualityLevelsUsed=(False,False,False,False))
+   ReferencedTextureGuids(0)=9568DDBE4557EEEED7BB5A812D10CF17
+   ReferencedTextureGuids(1)=069A338A49136FC91D657BABBFD69832
+   TextureStreamingDataVersion=1
+   TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="eye_blinn1_BaseColor_1001",TextureReference=/Game/Cane/Dog/eye_blinn1_BaseColor_1001.eye_blinn1_BaseColor_1001)
+   TextureStreamingData(1)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="iouoyyttfgi_initialShadingGroup_BaseColor_1001",TextureReference=/Game/iouoyyttfgi_initialShadingGroup_BaseColor_1001.iouoyyttfgi_initialShadingGroup_BaseColor_1001)
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=BEB3AE724AEF79A91FAD96A632C7B78B
+End Object
